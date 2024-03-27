@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz</title>
+</head>
+<body>
+
+   
+    
+<script>
+
+//  Desafio 1. 
+// Escreva um programa em JavaScript que receba uma matriz e retorna outra matriz com os valores de linhas e colunas trocadas.
+
+//      var matriz = [ [1, 2, 3],
+//                     [4, 5, 6],
+//                     [7, 8, 9]
+//                     ];
+
+// function transpose(matrix) {
+//   let res = [];
+//   for (let i = 0; i < matrix[0].length; i++) {
+//     res[i] = [];
+//     for (let j = 0; j < matrix.length; j++) {
+//       res[i][j] = matrix[j][i];
+//     }
+//   }
+//   console.log(res); 
+// }
+
+// transpose(matriz);
+
+ 
+//  Desafio 2. 
+// Escreva um programa em JavaScript que receba uma matriz e retorna outra matriz com a primeira e última linhas trocadas.
+
+let matriz = [[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9]];
+
+let temp = matriz[0];
+matriz[0] = matriz[matriz.length - 1];
+matriz[matriz.length - 1] = temp;
+
+// Calculate and print transpose 
+// function transpose(matrix) {
+//   let res = [];
+//   for (let i = 0; i < matrix[0].length; i++) {
+//     res[i] = [];
+//     for (let j = 0; j < matrix.length; j++) {
+//       res[i][j] = matrix[j][i];
+//     }
+//   }
+//   return res;
+// }
+
+// let transposedMatrix = transpose(matriz);
+console.log(matriz);
+
+</script>
+</body>
+</html>
